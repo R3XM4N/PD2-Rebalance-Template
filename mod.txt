@@ -1,0 +1,10 @@
+{
+	"name" : "4R Rebalance",
+	"author" : "rexxi using a template",
+	"blt_version" : 2,	
+	"color" : "1 1 1",
+	"version" : "1.0",
+	"hooks":[
+		{ "hook_id":"lib/tweak_data/weapontweakdata", "script_path":"ThisFileEditsWeaponStats.lua"}
+		]
+}
