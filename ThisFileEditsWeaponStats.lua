@@ -1,5 +1,14 @@
 Hooks:PostHook( WeaponTweakData, "init", "ThisFileEditsWeaponStats", function(self)  --replace "ThisFileEditsWeaponStats" with the name of this file
 
+    --airbow ecp
+    self.ecp.stats.damage = 200
+    self.ecp.stats_modifiers = {damage = 4}
+    self.ecp.damage_falloff = ASSAULT_FALL_LOW
+    self.ecp.AMMO_MAX = 40
+    self.ecp.CLIP_AMMO_MAX = 8
+    self.ecp.fire_mode_data.fire_rate = 60 / 240
+    
+
     --snipers
 
     --m95 thanos
