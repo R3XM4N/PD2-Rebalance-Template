@@ -1,5 +1,14 @@
 Hooks:PostHook( WeaponTweakData, "init", "ThisFileEditsWeaponStats", function(self)  --replace "ThisFileEditsWeaponStats" with the name of this file
 
+    --pistols
+
+    --deagle
+
+    self.deagle.stats.damage = 140
+    self.deagle.stats_modifiers = {damage = 2}
+    self.deagle.AMMO_MAX = 21
+    self.deagle.CLIP_AMMO_MAX = 7
+
     --airbow ecp
     self.ecp.stats.damage = 200
     self.ecp.stats_modifiers = {damage = 4}
@@ -24,6 +33,15 @@ Hooks:PostHook( WeaponTweakData, "init", "ThisFileEditsWeaponStats", function(se
     self.awp.AMMO_MAX = 30
     self.awp.CLIP_AMMO_MAX = 10
 
+    --rifles
+
+    --garant galant - ching id
+    self.ching.stats.damage = 120
+    self.ching.stats_modifiers = {damage = 2}
+    self.ching.damage_falloff = ASSAULT_FALL_LOW
+    self.ching.AMMO_MAX = 74
+    self.ching.CLIP_AMMO_MAX = 6
+
     --m4a1 - car 4
     self.new_m4.fire_mode_data.fire_rate = 60 / 700
     self.new_m4.CLIP_AMMO_MAX = 30
@@ -43,6 +61,12 @@ Hooks:PostHook( WeaponTweakData, "init", "ThisFileEditsWeaponStats", function(se
     self.famas.damage_falloff = ASSAULT_FALL_LOW
 
     --smgs
+    --SIG MPX signature - shepheard id
+    self.shepheard.fire_mode_data.fire_rate = 60 / 850
+    self.shepheard.CLIP_AMMO_MAX = 20
+    self.shepheard.AMMO_MAX = 180
+    self.shepheard.damage_falloff = ASSAULT_FALL_LOW
+
 
     --mark10 - mac11 -- mac10pdid
     self.mac10.fire_mode_data.fire_rate = 60 / 1200
