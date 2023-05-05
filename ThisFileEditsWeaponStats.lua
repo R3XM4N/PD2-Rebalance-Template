@@ -35,6 +35,13 @@ Hooks:PostHook( WeaponTweakData, "init", "ThisFileEditsWeaponStats", function(se
 
     --rifles
 
+    --little friend   Heckler & Koch HK417 -contraband id
+    self.contraband.fire_mode_data.fire_rate = 60 / 600
+    self.contraband.CLIP_AMMO_MAX = 20
+    self.contraband.AMMO_MAX = 80
+    self.contraband.damage_falloff = ASSAULT_FALL_LOW
+    self.contraband.AMMO_PICKUP = {4.7, 7}
+
     --garant galant - ching id
     self.ching.stats.damage = 120
     self.ching.stats_modifiers = {damage = 2}
@@ -46,7 +53,7 @@ Hooks:PostHook( WeaponTweakData, "init", "ThisFileEditsWeaponStats", function(se
     self.m16.fire_mode_data.fire_rate = 60 / 900
     self.m16.CLIP_AMMO_MAX = 30
     self.m16.AMMO_MAX = 120
-    self.new_m4.damage_falloff = ASSAULT_FALL_LOW
+    self.m16.damage_falloff = ASSAULT_FALL_LOW
 
     --m4a1 - car 4
     self.new_m4.fire_mode_data.fire_rate = 60 / 700
