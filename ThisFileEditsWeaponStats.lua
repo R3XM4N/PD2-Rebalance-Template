@@ -42,13 +42,19 @@ Hooks:PostHook( WeaponTweakData, "init", "ThisFileEditsWeaponStats", function(se
     self.ching.AMMO_MAX = 74
     self.ching.CLIP_AMMO_MAX = 6
 
+    --m16a4 - m16 id
+    self.m16.fire_mode_data.fire_rate = 60 / 900
+    self.m16.CLIP_AMMO_MAX = 30
+    self.m16.AMMO_MAX = 120
+    self.new_m4.damage_falloff = ASSAULT_FALL_LOW
+
     --m4a1 - car 4
     self.new_m4.fire_mode_data.fire_rate = 60 / 700
     self.new_m4.CLIP_AMMO_MAX = 30
     self.new_m4.AMMO_MAX = 180
     self.new_m4.stats.spread = 20
     self.new_m4.stats.recoil = 16
-    self.new_m4.stats.concealment = 22;
+    self.new_m4.stats.concealment = 24;
     self.new_m4.damage_falloff = ASSAULT_FALL_LOW
 
     --heavy eagle - scar
