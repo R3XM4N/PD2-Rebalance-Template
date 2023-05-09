@@ -97,4 +97,4 @@ Hooks:PostHook( WeaponTweakData, "init", "ThisFileEditsWeaponStats", function(se
 
     --
 
-end ) --DO NOT REMOVE THIS LINE
+end ) --DO NOT REMOVE THIS LINE yea its gonna fockin break it i am a programmer not a random
